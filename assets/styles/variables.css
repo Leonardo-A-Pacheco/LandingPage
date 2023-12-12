@@ -1,0 +1,14 @@
+
+/*
+font-family: 'Montserrat Alternates', sans-serif;
+font-family: 'Open Sans', sans-serif;
+*/
+
+:root{
+    --primary-color: #0C2659;
+    --secondary-color: #DC134c;
+    --white-color: #ffffff;
+    --light-gray-color: #EEEEEE;
+    --gap: 3rem;
+}
+
