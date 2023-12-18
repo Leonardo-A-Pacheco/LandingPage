@@ -29,3 +29,15 @@
     text-align: center;
 }
 
+.grid-one-content{
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    height: 90vh;
+}
+
+.grid{
+    display: flex;
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--gap);
+}
