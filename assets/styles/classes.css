@@ -14,9 +14,9 @@
 .main-content{
     max-width: 120rem;
     margin: 0 auto;
-    padding: var(--gap);
-    padding-top: 0;
-    padding-bottom: 0;
+    padding: 10rem var(--gap);
+    /* padding-top: 0;
+    padding-bottom: 0; */
 }
 
 .section{
@@ -24,6 +24,6 @@
 }
 
 .menu-spacing{
-    height: 6.5rem;
+    height: 6.5rem;background: none;
 }
 

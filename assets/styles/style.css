@@ -4,7 +4,7 @@
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     gap: var(--gap);
-    height: 80vh;
+    min-height: 80vh;
 }
 
 .intro-text-content, .intro-img{
@@ -23,7 +23,8 @@
 .top3-content{
     max-width: 60rem;
     display: flex;
-    flex-flow: column wrap;
+    flex-direction: column;
+    flex-wrap: nowrap;
     height: 90vh;
     justify-content: center;
     text-align: center;
@@ -33,11 +34,38 @@
     display: flex;
     flex-flow: column wrap;
     justify-content: center;
-    height: 90vh;
+    /* height: 100vh; */
 }
 
 .grid{
     display: flex;
     grid-template-columns: repeat(3, 1fr);
     gap: var(--gap);
+    counter-reset: grid-counter;
+}
+
+.grid h6{
+    position: relative;
+    padding-left: 5rem;
+    padding-bottom: 3rem;
+}
+
+.grid h6::before{
+    counter-increment: grid-counter;
+    content: counter(grid-counter);
+    position: absolute;
+    font-size: 8rem;
+    font-style: italic;
+    top: -4rem;
+    left: -2rem;
+    transform: rotate(7deg);
+
+}
+
+.grid-main-heading{
+    margin-bottom: 1rem;
+}
+
+.grid-description{
+    padding-bottom: 4rem;
 }
