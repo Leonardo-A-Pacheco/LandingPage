@@ -2,21 +2,18 @@
 
 .motor-counter {
     text-align: center;
-    font-family: 'Arial', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: flex;
-    align-items: center;
     justify-content: center;
-    height: 100vh;
-    background-color: #f4f4f4;
+    height: 10vh;
+    /* background-color: black; */
 }
 
-h1 {
-    color: #333;
+.motor-counter h5 {
+    color: var(--white-color);
+    text-shadow: 3px 3px 3px black;
 }
 
 #counter {
     font-size: 24px;
-    color: #007BFF;
+    color: white;
+    text-shadow: 3px 3px 3px black;
 }
