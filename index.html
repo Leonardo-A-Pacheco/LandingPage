@@ -33,7 +33,8 @@
             <li><a href="#top3">Como funciona</a></li>
             <li><a href="#grid-one">Sobre nós</a></li>
             <li><a href="#gallery">Conteúdos</a></li>
-            <li><a href="#contato">Preços</a></li>
+            <li><a href="#prices">Preços</a></li>
+            <li><a href="#footer">Contato</a></li>
           </ul>
         </nav>
       </div>
@@ -59,9 +60,9 @@
         </div>
       </div>
     </section>
-    <div id="top3" class="menu-spacing"></div>
+    <!-- <div id="top3" class="menu-spacing"></div> -->
 
-    <section class="white-bg section">
+    <section id="top3" class="white-bg section">
       <div class="main-content top3-content">
         <h2>Aproveite o benefício!</h2>
         <p>
@@ -83,9 +84,10 @@
         </p>
       </div>
     </section>
-
+    
     <!-- <div id="grid-one" class="menu-spacing"></div> -->
-
+    <!-- <div class="espace1"></div> -->
+    
     <section id="grid-one" class="grid-one main-bg section">
       <div class="main-content grid-one-content">
         <h1 class="grid-main-heading">my grid</h1>
@@ -174,7 +176,7 @@
       </div>
     </div>
   </section>
-  <div id="contato"></div>
+  <div id="prices"></div>
   
   <section class="white-bg section">
     <div class="main-content top3-content">
@@ -244,13 +246,64 @@
   </div>
 </section>
 
+<section id="contact" class="intro main-bg section">
+  <div class="main-content intro-content">
+    <div class="intro-text-content">
+      <h2>Transforme sua tela em um universo de entretenimento!</h2>
+      <p>
+        Transforme sua experiência de entretenimento com o "TV Online Plus"
+        e mergulhe em um universo de opções emocionantes. De séries
+        envolventes à adrenalina de eventos esportivos ao vivo, cada clique
+        revela um novo mundo de diversão. Com o "Tv Online Plus", a tela se
+        torna um portal para o entretenimento sem limites.
+      </p>
+    </div>
+    
+    <div class="intro-img">
+      <img src="./assets/img/intro-tv.png" alt="descrever imagem" />
+    </div>
+  </div>
+</section>
+  <!-- <div id="top3" class="menu-spacing"></div> -->
+  
+  <div class="contact-form">
+    <!-- <img src="./assets/img/intro-tv.png" alt="descrever imagem" /> -->
+    
+    <fieldset class="form-grid">
+      <legend>Contate-nos</legend>
+      <div class="form-group">
+        <label for="name">Nome</label>
+        <input type="text" name="name" id="name" placeholder="digite seu Nome">
+      </div>
+      <div class="form-group">
+        <label for="email">Email</label>
+        <input type="email" name="email" id="email" placeholder="digite seu email">
+      </div>
+      <div class="form-group">
+        <label for="telefone">telefone</label>
+        <input type="telefone" name="telefone" id="telefone" placeholder="digite seu telefone">
+      </div>
+      <div class="form-group full-width">
+      <label for="message">Mensagem:</label>
+      <textarea name="message" id="message" cols="30" rows="10"
+      placeholder="Digite sua questão nosso time entrará em contato"></textarea> 
+    </div>
+    <div class="form-group full-width">
+      <button type="submit">Enviar</button>
+    </div>
+  </fieldset>
+</div>
 
+<footer id="footer"  class="white-bg footer">
+  <p><a href="https://mrlap.github.io/LinkTree/" target="_blank">Site desenvolvido com <span class="heart">♥</span> por Leonardo Pacheco.</a>  
+  </p>
+</footer>
 
 <!--motor-couter js  -->
-<div class="motor-counter">
+<!-- <div class="motor-counter ">
   <h5>Contador de Visitas</h5>
   <p id="counter">Carregando...</p>
-</div>
+</div> -->
 
 <script src="./assets/js/motor.js" defer></script>
 </body>

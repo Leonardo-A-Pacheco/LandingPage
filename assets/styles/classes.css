@@ -10,6 +10,9 @@
     background: var(--white-color);
     color: var(--primary-color);
 }
+.espace1{
+    padding: 10rem;
+}
 
 .main-content{
     max-width: 120rem;
@@ -24,6 +27,27 @@
 }
 
 .menu-spacing{
-    height: 6.5rem;background: none;
+    height: 7.5rem;
+    background: none;
 }
 
+body .full-width{
+    width: 100%;
+    flex: 1 1 100%;
+}
+
+.form-group button{
+    border: 0.6rem solid var(--white-color);
+    background: none;
+    color: var(--white-color);
+    padding: 1.5rem 2rem;
+    font-size: 3rem;
+    cursor: pointer;
+    transition: all 300ms ease-in-out; 
+}
+
+.form-group button:hover{
+    background: var(--white-color);
+    color: var(--primary-color);
+    
+}
