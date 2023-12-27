@@ -24,11 +24,17 @@
   </head>
 
   <body class="main-bg">
+
+    <input id="close-menu" class="close-menu" type="checkbox" aria-label="Close menu" role="button">
+    <label class="close-menu-label" for="close-menu" title="close menu"></label>
+    
     <aside class="menu white-bg">
       <div class="main-content menu-content">
-        <h1><a href="#">logo</a></h1>
+        <h1 onclick="getElementById('close-menu').checked = false;">
+          <a href="#">logo</a>
+        </h1>
         <nav>
-          <ul>
+          <ul onclick="getElementById('close-menu').checked = false;">
             <li><a href="#">Planos</a></li>
             <li><a href="#top3">Como funciona</a></li>
             <li><a href="#grid-one">Sobre nós</a></li>
@@ -272,21 +278,21 @@
     <fieldset class="form-grid">
       <legend>Contate-nos</legend>
       <div class="form-group">
-        <label for="name">Nome</label>
+        <label for="name">Nome:</label>
         <input type="text" name="name" id="name" placeholder="digite seu Nome">
       </div>
       <div class="form-group">
-        <label for="email">Email</label>
+        <label for="email">Email:</label>
         <input type="email" name="email" id="email" placeholder="digite seu email">
       </div>
       <div class="form-group">
-        <label for="telefone">telefone</label>
+        <label for="telefone">telefone:</label>
         <input type="telefone" name="telefone" id="telefone" placeholder="digite seu telefone">
       </div>
       <div class="form-group full-width">
       <label for="message">Mensagem:</label>
       <textarea name="message" id="message" cols="30" rows="10"
-      placeholder="Digite sua questão nosso time entrará em contato"></textarea> 
+      placeholder="Mande sua questão, nosso time entrará em contato o mais breve possível"></textarea> 
     </div>
     <div class="form-group full-width">
       <button type="submit">Enviar</button>
@@ -298,6 +304,8 @@
   <p><a href="https://mrlap.github.io/LinkTree/" target="_blank">Site desenvolvido com <span class="heart">♥</span> por Leonardo Pacheco.</a>  
   </p>
 </footer>
+
+<a class="back-to-top" href="#">➤</a>
 
 <!--motor-couter js  -->
 <!-- <div class="motor-counter ">
